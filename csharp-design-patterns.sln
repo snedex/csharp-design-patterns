@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{5CE43452-EEC1-47CC-A1B5-BC7891C605EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{56362EC9-36D0-4CA7-8A32-17DDE58CA327}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{5CE43452-EEC1-47CC-A1B5-BC7891C605EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CE43452-EEC1-47CC-A1B5-BC7891C605EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CE43452-EEC1-47CC-A1B5-BC7891C605EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56362EC9-36D0-4CA7-8A32-17DDE58CA327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56362EC9-36D0-4CA7-8A32-17DDE58CA327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56362EC9-36D0-4CA7-8A32-17DDE58CA327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56362EC9-36D0-4CA7-8A32-17DDE58CA327}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

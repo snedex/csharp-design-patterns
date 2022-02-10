@@ -8,14 +8,11 @@ using Shared;
 
 namespace Builder
 {
-
-    
-
     public class FluentBuilder : ExampleBase, IExample
     {
         public FluentBuilder()
         {
-            SectionName = "Fluent Builder";
+            SectionName = "Fluent Builder with Generics";
         }
     
         protected override void ExecuteCode()

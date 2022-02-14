@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Builder.BasicBuilder;
+using Builder.Common;
 using Shared;
 
 namespace Builder
@@ -19,17 +20,15 @@ namespace Builder
         {
             Console.WriteLine("Lets create a fluent builder with recursive generics");
 
-            var builder = Person.New
+            var builder = BuiltPerson.New
                 .WorksAs("Renegade")
                 .Called("Commander Shepard");
 
             Console.WriteLine(builder.Build());
         }
 
-        public class Person {
-            public string Name;
-            public string Position;
-
+        public class BuiltPerson : Person
+        {
             //We expose an API for the builder
             public class Builder : PersonJobBuilder<Builder> 
             {
@@ -47,9 +46,9 @@ namespace Builder
         //Example builder base class
         public abstract class PersonBuilder 
         {
-            protected Person person = new Person();
+            protected BuiltPerson person = new BuiltPerson();
 
-            public Person Build()
+            public BuiltPerson Build()
             {
                 return person;
             }
